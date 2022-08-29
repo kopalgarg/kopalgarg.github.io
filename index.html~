@@ -1,0 +1,792 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+  <title>Chris Agia - Robotics and Learning</title>
+  
+  <meta name="author" content="Christopher Agia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" type="image/png" href="images/ml_icon.png">
+
+  <style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 22px;
+    font-family: monospace;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 0px;
+    width:100%;
+    vertical-align:middle;
+    background-color: #f9f9f9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+  }
+
+  </style>  
+
+</head>
+
+
+
+<body>
+
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/chrisagia_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chrisagia_circle.png" class="hoverZoomLink"></a>
+            </td>
+
+            <td style="padding:2.5%;width:63%;vertical-align:middle;background-color: #f9f9f9">
+              <p style="text-align:center">
+                <name>Chris Agia</name>
+              </p>
+              <p>
+                I am a recent graduate from the <a href="https://orientation.engsci.utoronto.ca/2020/07/08/engsci-majors-robotics-engineering/">Engineering Science, Robotics</a> program at the University of Toronto. The objective of my research is to push the boundaries of AI-driven perception and planning systems to position robots for success in long-horizon, complex task settings. In pursuit of this, I'll be working on multi-agent reinforcement learning in mixed reality environments at <a href="https://www.microsoft.com/en-us/research/project/robotics-and-mixed-reality/">Microsoft</a> this summer, prior to starting my Ph.D in Computer Science at <a href="https://ai.stanford.edu/">Stanford</a> in the fall.
+              </p>
+                
+              <p>
+                I am advised by <a href="http://www.cs.toronto.edu/~florian/"><strong>Florian Shkurti</strong></a> at the <a href="https://rvl.cs.toronto.edu/">Robot Vision and Learning Lab</a> (affiliations: <a href="https://vectorinstitute.ai/">Vector Institute</a>, <a href="https://robotics.utoronto.ca/">UofT Robotics Institute</a>). We are excitedly working with colleagues from <a href="https://liampaull.ca/"><strong>Liam Paull</strong></a>'s group at <a href="https://montrealrobotics.ca/">MILA</a>, Facebook AI Research, and Microsoft Research. 
+              </p>
+
+              <p>
+              	I'm fortunate to have collaborated with <a href="https://www.cim.mcgill.ca/~dmeger/"><strong>David Meger</strong></a>'s and <a href="http://www.cim.mcgill.ca/~dudek/"><strong>Gregory Dudek</strong></a>'s group at <a href="https://www.cim.mcgill.ca/~mrl/">McGill</a>, and <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/"><strong>Goldie Nejat</strong></a>'s group at the <a href="http://asblab.mie.utoronto.ca/">University of Toronto</a>. In industry, I pursued a one-year <strong>Deep Learning Research Internship</strong> at <a href="http://www.noahlab.com.hk/#/home">Huawei Noah's Ark Lab</a>, where I worked on perception and localization systems for <strong>self-driving vehicles</strong> with <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en"><strong>Bingbing Liu</strong></a>. I also spent some time at <a href="https://about.google/">Google</a> Cloud architecting ABI simulators.
+              </p>
+
+              <p style="text-align:center">
+                <a href="mailto:christopher.agia@mail.utoronto.ca">Email</a> &nbsp/&nbsp
+                <a href="data/CA_Resume_2021.pdf">Resume</a> &nbsp/&nbsp
+                <a href="data/CA_ResearchCV_2021.pdf">CV</a> &nbsp/&nbsp
+                <!-- <a href="data/ChrisAgiaBio.txt">Biography</a> &nbsp/&nbsp -->
+                <a href="http://www.linkedin.com/in/agiachris/"> LinkedIn</a> &nbsp/&nbsp
+                <a href="https://github.com/agiachris/"> GitHub</a>
+              </p>
+
+            </td>
+
+          </tr>
+        </tbody></table>
+        
+
+
+        <p></p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+<!--         <button class="accordion">..Education</button>
+        <div class="panel">
+        <p></p> -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="text-align: right; background-color: #eee">
+              <heading style="font-family: monospace; font-size: 22px; color: #444">..Education</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>   -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Stanford-Crest-Square.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Ph.D in Computer Science</papertitle>
+              <br>
+                Department of Computer Science, Stanford University
+              <br>
+                (Next) Sep 2021 | Stanford, CA
+              <p> </p> 
+              <em><strong>Stanford Graduate Fellowship - School of Engineering</strong></em>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>   -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/UofT-Crest-Square.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>B.A.Sc in Engineering Science, Robotics</papertitle>
+              <br>
+                Faculty of Applied Science and Engineering, University of Toronto 
+              <br>
+                Sep 2016 - May 2021 | Toronto, ON
+              <p> </p> 
+              <em><strong>President's Scholarship Program</strong></em>
+              <br>
+              <em><strong>NSERC Undergraduate Research Award</strong></em>
+              <br>
+              <em><strong>Dean's Honour List - 2018-2021</strong></em>
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
+
+
+
+        <p></p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am interested bridging concepts from <strong>Robotics</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> to build improved task planning, motion planning, decision-making and control systems. More recently, I've explored the use of <strong>unsupervised representation learning</strong> and <strong>reinforcement learning</strong> to create observational / world models that faciliate optimal planning and control. 
+              </p>
+              <p>
+                I've also lead and contributed to perception projects related to: 3D Scene Understanding, 2D/3D Semantic Scene Completion, 2D/3D Object Detection, LiDAR segmentation, and more!
+              </p>
+            </td>
+          </tr>
+        </tbody></table> -->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="text-align: right; background-color: #eee">
+              <heading style="font-family: monospace; font-size: 22px; color: #444">..Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <p>
+                I am interested bridging concepts from <strong>Robotics</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> to build improved task planning, motion planning, decision-making and control systems. More recently, I've explored the use of <strong>unsupervised representation learning</strong> and <strong>reinforcement learning</strong> to create observational / world models that faciliate optimal planning and control. 
+              </p>
+              <p>
+                My <strong>current focus</strong> is on the application of <strong>graph representation learning</strong> for long-horizon robot task planning in large-scale scene graphs. I've also lead and contributed to perception projects related to: 3D Scene Understanding, 2D/3D Semantic Scene Completion, 2D/3D Object Detection, LiDAR segmentation, and more!
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Journal Papers</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/sem_loc.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Lightweight Semantic-aided Localization with Spinning LiDAR Sensor</papertitle>
+              <br>
+              Yuan Ren*, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <strong>Christopher Agia</strong>, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
+              <br>
+              [Patented]. <em><a href="https://www.ieee-itss.org/ieee-iv-transactions">IEEE Transactions on Intelligent Vehicles (T-IV)</a></em>, 2021
+              <p>How can semantic information be leveraged to improve localization accuracy in changing environments? We present a semantic enhanced LiDAR-based localization algorithm that considers a robust combination of semantic and non-semantic information, enabling adaptive scene-dependent localization behaviour.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <video width="140" height="140" src="images/sim2real_drl_rough_nav.mp4" type="video/mp4" muted autoplay loop></video>
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>A Sim-to-Real Pipeline for Deep Reinforcement Learning for Autonomous Robot Navigation in Cluttered Rough Terrain</papertitle>
+              <br>
+              <a href="https://www.linkedin.com/in/richardhu-12dsf/?originalSubdomain=ca">Han Hu*</a>, <a href="https://www.linkedin.com/in/kczhang/?originalSubdomain=ca">Kaicheng Zhang*</a>, <a href="https://www.linkedin.com/in/aaron-hao-tan/?originalSubdomain=ca">Aaron Hao Tan</a>, <a href="https://www.linkedin.com/in/michael-ruan-0822/">Michael Ruan</a>, <strong>Christopher Agia</strong>, <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/"> Goldie Nejat</a>
+              <br>
+              <a href="https://www.ieee-ras.org/publications/ra-l"><em>IEEE Robotics and Automation Letters (RA-L)</em></a>, 2021   
+              <br>
+              <a href="https://www.youtube.com/watch?v=dtYlNWvK-7k&ab_channel=AutonomousSystemsandBiomechatronicsLab%28UniversityofToronto%29">Video</a>          
+              <p>Deep Reinforcement Learning is effective for learning robot navigation policies in rough terrain and cluttered simulated environments. In this work, we introduce a series of techniques that are applied in the policy learning phase to enhance transferability to real-world domains.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Conference Papers</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/taskography_3dsg.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Taskography: Evaluating Robot Task Planning over Large 3D Scene Graphs</papertitle>
+              <br>
+              <strong>Christopher Agia*</strong>, <a href="https://krrish94.github.io/author/krishna-murthy-jatavallabhula/">Krishna Murthy Jatavallabhula*</a>, <a href="https://www.linkedin.com/in/khodeir/?originalSubdomain=ca">Mohamed Khoderi</a>, <a href="https://www.microsoft.com/en-us/research/people/onmiksik/">Ondrej Miksik</a>, <a href="http://www.mustafamukadam.com/">Mustafa Mukadam</a>, <a href="http://vibhavvineet.info/">Vibhav Vineet</a>, <a href="https://liampaull.ca/">Liam Paull</a>, <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>
+              <br>
+              <em>Under review</em>, 2021
+              <br>
+              <a href="https://drive.google.com/file/d/1LjTdgwuiJa-gIiVbbqj9vh-qoEZgqkb_/view?usp=sharing">BASc Thesis</a>
+              <p>3D Scene Graphs (3DSGs) are informative abstractions of our world that unify symbolic, semantic, and metric scene representations. We present a benchmark for robot task planning over large 3DSGs and evaluate classical and learning-based planners; showing that real-time planning requires 3DSGs and planners to be jointly adapted to better exploit 3DSG hierarchies.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/aug_att_rl.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Latent Attention Augmentation for Robust Autonomous Driving Policies</papertitle>
+              <br>
+              <strong>Christopher Agia*</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng*</a>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>, <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>, <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>
+              <br>
+              <em>Under review</em>, 2021
+              <p>Learning visual state representations can significantly reduce the strain on policy learning from high-dimensional images. In this paper, we propose a framework to inform and guide policy learning with augmented attention representations, demonstrating outstanding convergence speeds and stability for self-driving control.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/s3cnet_demo.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>S3CNet: A Sparse Semantic Scene Completion Network for LiDAR Point Clouds</papertitle>
+              <br>
+              <strong>Christopher Agia*</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng*</a>, Yuan Ren, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
+              <br>
+              [Patented]. <a href="https://www.robot-learning.org"><em>Conference on Robot Learning (CoRL)</em></a>, 2020 | MIT, US
+              <br> 
+              <a href="papers/S3CNet-CoRL-2020.pdf">PDF</a> / <a href="https://www.youtube.com/watch?v=ircJBFc5PqM&feature=youtu.be&ab_channel=CoRLConference">Talk</a> / <a href="https://www.youtube.com/watch?v=voU_zAhNDnQ&feature=youtu.be&ab_channel=RanCheng">Video</a> / <a href="https://arxiv.org/abs/2012.09242">arXiv</a>
+              <p>Small-scale semantic reconstruction methods have had little success in large outdoor scenes as a result of exponential increases in sparsity, and a computationally expensive design. We propose a sparse convolutional network architecture based on the <a href="https://github.com/StanfordVL/MinkowskiEngine">Minkowski Engine</a>, achieving state-of-the-art results for semantic scene completion in 2D/3D space from LiDAR point clouds.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ddvo_res.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Depth Prediction for Monocular Direct Visual Odometry</papertitle>
+              <br>
+              <a href="https://rancheng.github.io/about/">Ran Cheng*</a>, <strong>Christopher Agia</strong>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>, <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>
+              <br>
+              <a href="http://www.computerrobotvision.org/"><em>Conference on Computer and Robotic Vision (CRV)</em></a>, 2020 | Ottawa, ON
+              <br> 
+              <a href="papers/CNN-DVO-CRV-2020.pdf">PDF</a> / <a href="https://www.youtube.com/watch?v=Z8vpet0doik&feature=youtu.be&ab_channel=ComputerRobotVision">Talk</a> / <a href="papers/CNN-DVO-Poster-CRV-2020.pdf">Poster</a>
+              <p>Direct methods are able to track motion with considerable long-term accuracy. However, scale inconsistent estimates arise from random or unit depth initialization. We integrate dense depth prediction with the Direct Sparse Odometry system to accelerate convergence in the windowed bundle-adjustment and promote estimates with consistent scale.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Patents</heading>
+              <p>Several methods from Conference / Journal Papers contain patented components as well (i.e. indicated by [Patented]).
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/road_surface_seg.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Road Surface Semantic Segmentation from LiDAR Point Clouds</papertitle>
+              <br>
+              <strong>Christopher Agia*</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, Yuan Ren, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
+              <br>
+              [Patented], 2020
+              <p>Long-range sparsity in point clouds constitutes a challenge for accurate LiDAR-based road estimation. This invention leverages bird's eye view features learned directly from aggregated point clouds and refines them with a convolutional CRF to semantically segment roads and predict surface elevation with high precision.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+        <p></p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+        <button class="accordion">..Work Experience</button>
+        <div class="panel">
+        <p></p>
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Work Experience</heading>
+            </td>
+          </tr>
+        </tbody></table> -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/microsoft_logo.jpg" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Software Engineering Intern</papertitle>
+              <br>
+                <a href="https://www.microsoft.com/en-us/research/project/robotics-and-mixed-reality/">Microsoft</a>, Mixed Reality and Robotics
+              <br>
+                May 2021 - <strong>Present</strong> | Redmond, Washington
+              <p> 
+                Working at the intersection of mixed reality, artificial intelligence, and robotics. 
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/vector_institute_logo.jpg" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Robotics & ML Researcher</papertitle>
+              <br>
+                <a href="https://vectorinstitute.ai/">Vector Institute</a>, <a href="https://rvl.cs.toronto.edu/">Robot Vision and Learning Lab</a> | Advised by <a href="http://www.cs.toronto.edu/~florian/">Prof. Florian Shkurti</a>  
+              <br>
+                <a href="https://web.cs.toronto.edu/">Department of Computer Science</a>, University of Toronto
+              <br>
+                May 2020 - <strong>Present</strong> | Toronto, ON
+              <p>
+                Research in artificial intelligence and robotics. Topics include task-driven perception via learning map representations for downstream control tasks with graph neural networks, and visual state abstraction for Deep Reinforcement Learning based self-driving control.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/google_logo.png" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Software Engineering Intern</papertitle>
+              <br>
+                <a href="https://about.google/">Google</a>, Cloud
+              <br>
+                May 2020 - Aug 2020 | San Francisco, CA
+              <p> 
+                Designed a Proxy-Wasm ABI <a href="https://github.com/proxy-wasm/test-framework">Test Harness and Simulator</a> that supports both low-level and high-level mocking of interactions between a Proxy-Wasm extension and a simulated host environment, allowing developers to test plugins in a safe and controlled environment.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/mcgill_logo.png" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Robotics & ML Research Intern</papertitle>
+              <br>
+                <a href="https://www.cim.mcgill.ca/~mrl/">Mobile Robotics Lab</a> | Supervised by <a href="http://www.cim.mcgill.ca/~dmeger/">Prof. David Meger</a>, <a href="http://www.cim.mcgill.ca/~dudek/">Prof. Gregory Dudek</a> 
+              <br>
+                <a href="https://www.cs.mcgill.ca/">School of Computer Science</a>, McGill University
+              <br>
+                Jan 2020 - May 2020 | Toronto, ON
+              <p> 
+                Machine learning and robotics research on the topics of Visual SLAM and Deep Reinforcement Learning in collaboration with the Mobile Robotics Lab.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+       
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/huawei_logo.jpg" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Deep Learning Research Intern</papertitle>
+              <br>
+                Huawei Technologies, <a href="http://www.noahlab.com.hk/#/home">Noah's Ark Research Lab</a>
+              <br>
+                May 2019 - May 2020 | Toronto, ON
+              <p> 
+                Research and development for autonomous systems (self-driving technology). Research focus and related topics: 2D/3D semantic scene completion, LiDAR-based segmentation, road estimation, visual odometry, depth estimation, and learning-based localization. 
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/autoronto_logo.png" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Autonomy Engineer - Object Detection</papertitle>
+              <br>
+                <a href="https://www.autodrive.utoronto.ca/about-us">aUToronto</a>, Object Detection Team | <a href="https://www.sae.org/attend/student-events/autodrive-challenge/">SAE/GM Autodrive Challenge </a> 
+              <br>
+                Aug 2019 - Apr 2020 | Toronto, ON
+              <p> 
+              	Developed a state-of-the-art deep learning pipeline for real-time 3D detection and tracking of vehicles, pedestrians and cyclists from multiple sensor input. 
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/UofT-Crest-Square.png" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Robotics Research Intern</papertitle>
+              <br>
+                <a href="http://asblab.mie.utoronto.ca/">Autonomous Systems and Biomechatronics Lab</a> | Advised by <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/">Prof. Goldie Nejat</a>
+              <br>
+                <a href="https://www.mie.utoronto.ca/">Department of Mechanical and Industrial Engineering</a>, University of Toronto
+              <br>
+                May 2018 - Aug 2018 | Toronto, ON
+              <p> 
+              	Search and rescue robotics - research on the topics of Deep Reinforcement Learning and Transfer Learning for autonomous robot navigation in rough and hazardous terrain. ROS (Robot Operating System) software development for various mobile robots.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ge_logo.jpg" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Software Engineering Intern</papertitle>
+              <br>
+                General Electric, <a href="https://www.gegridsolutions.com/index.htm">Grid Solutions</a>
+              <br>
+                May 2017 - Aug 2017 | Markham, ON
+              <p> 
+              	Created customer-end software tools used to accelerate the transition/setup process of new protection and control systems upon upgrade. Designed the current Install-Base and Firmware Revision History databases used by GE internal service teams.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
+
+
+
+        <p></p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+        <button class="accordion">..Projects and Competitions</button>
+        <div class="panel">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Projects and Competitions</heading>
+              <p>
+                <strong>Learn by doing</strong> - I've had the opportunity to work on many interesting projects that range across industries such as Robotics, Health Care, Finance, Transportation, and Logistics.  
+              <p>
+              	Links to the source code are embedded in the project titles.
+              </p>
+            </td>
+          </tr>
+        </tbody></table> -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <p>
+                <strong>Learn by doing</strong> - I've had the opportunity to work on many interesting projects that range across industries such as Robotics, Health Care, Finance, Transportation, and Logistics.  
+              <p>
+                Links to the source code are embedded in the project titles.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/uncertainty_fig.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <!-- <a href="https://github.com/agiachris/SfMLearnerMars"> -->
+                <papertitle>Bayesian Temporal Convolutional Networks</papertitle>
+              <!-- </a> -->
+              <br>
+                University of Toronto, CSC413 Neural Networks and Deep Learning
+              <p>
+                In this project, we explore the application of variational inference via <a href="https://arxiv.org/abs/1505.05424">Bayes by Backprop</a> to the increasingly popular temporal convolutional networks (<a href="https://arxiv.org/abs/1803.01271">TCNs</a>) architecture for time series predictive forecasting. Comparisons are made to the effective state-of-the-art in a series of ablation studies. <a href="https://drive.google.com/file/d/1DZY1iPzOM_QXONoLzzPvMOBEs20Uy_7e/view?usp=sharing">Project report</a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/train_s0_disp.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/agiachris/SfMLearnerMars">
+                <papertitle>SfMLearner on Mars</papertitle>
+              </a>
+              <br>
+                University of Toronto, ROB501 Computer Vision for Robotics
+              <p> 
+                Adapted the SfMLearner framework from <a href="https://people.eecs.berkeley.edu/~tinghuiz/projects/SfMLearner/">Unsupervised Learning of Depth and Ego-Motion from Video</a> to The Canadian Planetary Emulation Terrain Energy-Aware Rover Navigation Dataset (<a href="https://starslab.ca/enav-planetary-dataset/">dataset webpage</a>), and evaluated its feasibility for tracking in low-textured martian-like environments from monochrome image sequences. <a href="https://drive.google.com/file/d/16v0W1VfNscWW1BTFe7GG9-p4JagS2nBy/view?usp=sharing">Project report</a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/rec_chair.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/agiachris/rotational3DCNN">
+                <papertitle>3D Shape Reconstruction</papertitle>
+              </a>
+              <br>
+                University of Toronto, APS360 Applied Fundamentals of Machine Learning
+              <p> 
+                 An empirical study of various 3D Convolutional Neural Network architectures for predicting the full voxel geometry of objects given their partial signed distance field encodings (from the <a href="https://shapenet.org/">ShapeNetCore</a> database). <a href="https://github.com/agiachris/rotational3DCNN/blob/main/project_description_and_results/ProjectReport.pdf">Project report</a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/aer201.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/agiachris/AER201-Microcontroller">
+              	<papertitle>Autonomous Packing Robot</papertitle>
+          	  </a>
+              <br>
+                University of Toronto, AER201 Robot Competition
+              <p> 
+              	Designed, built, and programmed a robot that systematically sorts and packs up to 50 pills/minute to assist those suffering from dimentia. An efficient user interface was created to allow a user to input packing instructions. <strong><em> Team placed 3rd/50.</em></strong> <a href="https://drive.google.com/file/d/1wl2uyzpLt61S0hzdNPHVLlGFJeSz2zRs/view?usp=sharing">Detailed project documentation</a> / <a href="https://www.youtube.com/watch?v=iv9r8VIvHpQ">Youtube video</a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/cec.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/kimwoo11/cec2019">
+              	<papertitle>Automated Robotic Garbage Collection</papertitle>
+          	  </a>
+              <br>
+                Canadian Engineering Competition 2019, Programming Challenge
+              <p> 
+              	Based on the robotics <a href="https://en.wikipedia.org/wiki/Sense_Plan_Act">Sense-Plan-Act Paradigm</a>, we created an AI program to handle high-level (path planning, goal setting) and low-level (path following, object avoidance, action execution) tasks for an automated waste collection system to be used in fast food restaurants. <strong><em>4th place Canada.</em></strong> <a href="https://drive.google.com/file/d/1rYYnvsim5CcmZjdqTi77GO5-5UgTqhUc/view?usp=sharing">Presentation </a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/oec_logo.jpg" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/kimwoo11/oec2019">
+              	<papertitle>Hospital Triage System</papertitle>
+              </a>
+              <br>
+                Ontario Engineering Competition 2019, Programming Challenge
+              <p> 
+              	Developed a machine learning software solution to predict the triage score of emergency patients, allocate available resources to patients, and track key hospital performance metrics to reduce emergency wait times. <strong><em>1st place Ontario.</em></strong> <a href="https://drive.google.com/file/d/131vm1maZUMwwmfP15GKlHtS03BRCOEMn/view?usp=sharing">Presentation</a> / <a href="images/oec_team.jpg">Team photo</a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/utek_logo.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/kimwoo11/utek2019">
+              	<papertitle>Warehouse Logistics Planning</papertitle>
+              </a>
+              <br>
+                UTEK Engineering Competition 2019, Programming Challenge
+              <p> 
+              	Created a logistics planning algorithm that assigned mobile robots to efficiently retrieve warehouse packages. Our solution combined traditional algorithms such as A* Path Planning with heuristic-based clustering. <strong><em>1st place UofT.</em></strong> <a href="https://drive.google.com/file/d/1ZynKLH1kdHOEQr2_tRnss4r-cF7ILf8S/view?usp=sharing">Presentation</a> / <a href="images/utek_team.jpg">Team photo</a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/mie438.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Smart Intersection - Yonge and Dundas</papertitle>
+              <br>
+                University of Toronto, MIE438 Robot Design
+              <p> 
+              	We propose a traffic intersection model which uses computer vision to estimate lane congestion and manage traffic flow accordingly. A mockup of our proposal was fabricated to display the behaviour and features of our system.<a href="https://drive.google.com/file/d/10SHGcUwMIGsUryGMhp0yHSlfHsys0UA0/view?usp=sharing"> Detailed report </a> / <a href="https://www.youtube.com/watch?v=fOmKNn2y-C4">YouTube video </a> 
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/cibc_logo.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/agiachris/CIBC-Hackathon">
+              	<papertitle>Insurance Fraud Detection</papertitle>
+              </a>
+              <br>
+                CIBC Data Studio Hackathon, Programming Challenge
+              <p> 
+              	Developed an unsupervised learning system utilizing Gaussian Mixture Models to identify insurance claim anomalies for CIBC.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/bluesky_logo.jpg" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/agiachris/Solar-Array-Simulator">
+              	<papertitle>Solar Array Simulation</papertitle>
+              </a>
+              <br>
+                Blue Sky Solar Racing, Strategic Planning Team
+              <p> 
+              	Created a simulator that ranks the performance of any solar array CAD model by predicting the instantaneous energy generated under various daylight conditions. 
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/gomoku.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/agiachris/Gomoku-AI-Engine">
+              	<papertitle>Gomoku AI Engine</papertitle>
+              </a>
+              <br>
+                University of Toronto, Class Competition
+              <p> 
+              	Developed an AI program capable of playing Gomoku against both human and virtual opponents. The software's decision making process is determined by experimentally tuned heuristics which were designed to emulate that of a human opponent. 
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/semsim.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/agiachris/Semantic-Similarity">
+              	<papertitle>Word Pairing - Semantic Similarity</papertitle>
+              </a>
+              <br>
+                University of Toronto, Class Competition
+              <p> 
+              	Programmed an intelligent system that approximates the semantic similarity between any two pair of words by parsing data from large novels and computing cosine similarities and Euclidean spaces between vector descriptors of each word.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles-js"></div>
+  <script>
+    particlesJS.load("particles-js", "particles_config/particlesjs-config-gray.json",
+    function(){
+        console.log("particles.json loaded...")
+    })
+  </script>
+
+
+</body>
+</html>
