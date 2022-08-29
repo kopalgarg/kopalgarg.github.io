@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Kopal Garg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Kopal Garg - Machine Learning and Time-Series</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="image/png" href="images/ml_icon.png">
+
+    <style>
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: right;
+        outline: none;
+        font-size: 22px;
+        font-family: monospace;
+        transition: 0.4s;
+      }
+
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+
+      .panel {
+        padding: 0 0px;
+        width:100%;
+        vertical-align:middle;
+        background-color: #f9f9f9;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+      }
+      
+      /* Style the button that is used to open and close the collapsible content */
+      .collapsible {
+        background-color: #f9f9f9;
+        /* color: #444; */
+        cursor: pointer;
+        /* padding: 18px; */
+        width: 100%;
+        border: none;
+        text-align: right;
+        outline: none;
+        /* font-size: 15px; */
+        font-family: monospace;
+        transition: 0.4s;
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .collapsible:hover {
+        background-color: #ccc;
+      }
+
+      /* Style the collapsible content. Note: hidden by default */
+      .content {
+        /* padding: 0 18px; */
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        transition: max-height 0.4s ease-out;
+      }
+    </style>  
+  </head>
+
+  <body>
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+      <tr style="padding:0px">
+      <td style="padding:0px">
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+          <tr style="padding:0px">
+
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="/images/kopal_garg.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/kopal_garg.png" class="hoverZoomLink"></a>
+            </td>
+
+            <td style="padding:2.5%;width:63%;vertical-align:middle;background-color: #f9f9f9">
+              <p style="text-align:center">
+                <name>Kopal Garg</name>
+              </p>
+              <p>
+                I am a first-year masters student in Computer Science at the University of Toronto and a member of the 
+                <a href="https://vectorinstitute.ai/">Vector Institute</a>.
+                I'm advised by <strong>Dr. Anna Goldenberg</strong>.
+              </p>
+              <p>
+                My research focuses on AI in healthcare, and I seek to develop statistical and deep learning approaches for modeling multi-variate clinical time-series. 
+                  I graduated from the 
+                  <a href="https://uwaterloo.ca/future-students/programs/biomedical-engineering">Biomedical Engineering program</a> 
+                  at the University of Waterloo. I've been fortunate to collaborate with <a href="https://bloodgenes.org">Dr. Vijay Sankaran and Dr. Caleb Lareau</a> at 
+                  <a href="https://www.broadinstitute.org/">the Broad Institute</a>, Dr. Rosanna Weksberg and Dr. Sanaa Choufani
+                  at <a href="http://sickkids.ca/">the SickKids Institute</a>, Dr. Janet Ronsky and Dr. Tomasz Bugajski at the 
+                  <a href="https://mccaig.ucalgary.ca/">McCaig Institute</a>, and colleagues from 
+                  <a href="https://www.ibm.com/ca-en">IBM Labs</a>. 
+              </p>
+              <p>
+                I set aside a few hours each week for research discussions and mentorship. If you feel this could be of 
+                benefit to you, please book an open slot <a href="https://calendly.com/gargkopal24/15min">here</a>.
+              </p>
+              
+
+
+              <p style="text-align:center">
+                kopal[at]cs.toronto.edu &nbsp/&nbsp
+                <a href="data/kopal_garg.pdf">CV</a> &nbsp/&nbsp
+                <a href="http://www.linkedin.com/in/gargkopal/"> LinkedIn</a> &nbsp/&nbsp
+                <a href="https://github.com/kopalgarg/"> GitHub</a>
+              </p>
+
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <p></p>
+
+        <!-- Education -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
+          <tr>
+            <td style="text-align: right; background-color: #eee">
+              <heading style="font-family: monospace; font-size: 22px; color: #444">..Education</heading>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>   -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;">
+          <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/UofT-Crest-Square.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>MSc in Computer Science</papertitle>
+              <br>
+                Department of Computer Science, University of Toronto
+              <br>
+                Sept. 2021 - Present | Toronto, ON
+              <p> </p> 
+              <em><strong>Graduate Scholarship</strong></em>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>   -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;">
+          <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/UW-Crest-Square.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>B.A.Sc in Biomedical Engineering</papertitle>
+              <br>
+                Faculty of Applied Science and Engineering, University of Waterloo 
+              <br>
+                Sept. 2016 - May 2021 | Waterloo, ON
+              <p> </p> 
+              <em><strong>President's Scholarship</strong></em>
+              <br>
+              <em><strong>Dean's Honour List - 2019-2021</strong></em>
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
+        <p></p>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="text-align: right; background-color: #eee">
+              <heading style="font-family: monospace; font-size: 22px; color: #444">..Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <p>
+                TODO
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Journal Papers</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/sem_loc.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>TODO</papertitle>
+              <br>
+              Yuan Ren*, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <strong>Christopher Agia</strong>
+              <br>
+              [Patented]. <em>IEEE Transactions on Intelligent Vehicles (T-IV)</em>, 2021
+              <br>
+              <a href="papers/SemanticLoc-TIV-2021.pdf">PDF</a> / <a href="https://ieeexplore.ieee.org/document/9495210">IEEExplore</a>
+              <p>How can semantic information be leveraged to improve localization accuracy in changing environments? We present a robust LiDAR-based localization 
+                algorithm that exploits both semantic and geometric properties of the scene with an adaptive fusion strategy.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Conference Papers</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/taskography_3dsg.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Taskography: Evaluating Robot Task Planning over Large 3D Scene Graphs</papertitle>
+              <br>
+              <strong>Christopher Agia*</strong>, <a href="https://krrish94.github.io/author/krishna-murthy-jatavallabhula/">Krishna Murthy Jatavallabhula*</a>, <a href="https://www.linkedin.com/in/khodeir/?originalSubdomain=ca">Mohamed Khodeir</a>, <a href="https://www.microsoft.com/en-us/research/people/onmiksik/">Ondrej Miksik</a>, <a href="http://www.mustafamukadam.com/">Mustafa Mukadam</a>, <a href="http://vibhavvineet.info/">Vibhav Vineet</a>, <a href="https://liampaull.ca/">Liam Paull</a>, <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>
+              <br>
+              <em>Conference on Robot Learning (CoRL)</em>, 2021 | London, UK
+              <br>
+              <a href="papers/Taskography-CoRL-2021.pdf">PDF</a> / <a href="papers/Taskography-Poster-CoRL-2021.pdf">Poster</a> / <a href="https://arxiv.org/abs/2207.05006">arXiv</a> / <a href="https://taskography.github.io/">Project Site</a> / <a href="https://github.com/taskography">Code</a>
+              <p>3D Scene Graphs (3DSGs) are informative abstractions of our world that unify symbolic, semantic, and metric scene representations. 
+                We present a benchmark for robot task planning over large 3DSGs and evaluate classical and learning-based planners; 
+                showing that real-time planning requires 3DSGs and planners to be jointly adapted to better exploit 3DSG hierarchies.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Theses</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/thesis_3dsg.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Contextual Graph Representations for Task-driven 3D Perception and Planning</papertitle>
+              <br>
+              <strong>Christopher Agia*</strong>, <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>
+              <br>
+              <em>Division of Engineering Science, University of Toronto</em>, 2020 | Toronto, CA
+              <br>
+              <a href="https://drive.google.com/file/d/1LjTdgwuiJa-gIiVbbqj9vh-qoEZgqkb_/view?usp=sharing">PDF</a>
+              <p>We evaluate the suitability of existing simulators for research at the intersection of task planning and 3D scene graphs and
+                construct a benchmark for comparison of symbolic planners. Furthermore, we explore the use of Graph Neural Networks to
+                harness invariances in the relational structure of planning domains and learn representations that afford faster planning.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <p></p>
+
+        
+        <!-- Work Experience -->
+        <button class="accordion">..Work Experience</button>
+        <div class="panel">
+        <p></p>
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Work Experience</heading>
+            </td>
+          </tr>
+        </tbody></table> -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/vector_institute_logo.jpg" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>ML Researcher</papertitle>
+              <br>
+                <a href="https://vectorinstitute.ai/">Vector Institute</a>, <a href="https://goldenberg.ca">Goldenberg Lab</a> | Advised by <a href="https://goldenberg.ca">Prof. Anna Goldenberg</a>  
+              <br>
+                <a href="https://web.cs.toronto.edu/">Department of Computer Science</a>, University of Toronto
+              <br>
+                May 2021 - <strong>Present</strong> | Toronto, ON
+              <p>
+                Research in artificial intelligence and healthcare. Topics include time-series, change-point detection.
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/IBM.svg" alt="clean-usnob" width="120" height="120">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>IBM</papertitle>
+              <br>
+                <a href="ibm.ca">IBM</a>
+              <br>
+                May 2022 - Aug 2022 | Toronto, ON
+              <p> 
+                TODO
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        </div>
+        <p></p>
+
+
+        <!-- Projects -->
+        <button class="accordion">..Projects and Competitions</button>
+        <div class="panel">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Projects and Competitions</heading>
+              <p>
+                <strong>Learn by doing</strong> - I've had the opportunity to work on many interesting projects that range across industries such as Robotics, Health Care, Finance, Transportation, and Logistics.  
+              <p>
+                Links to the source code are embedded in the project titles.
+              </p>
+            </td>
+          </tr>
+        </tbody></table> -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <p>
+                <strong>Learn by doing</strong> - I've had the opportunity to work on many interesting projects that range across industries such as Health Care, and Genomics.  
+              <p>
+                Links to the source code are embedded in the project titles.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+      
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/uncertainty_fig.png" alt="clean-usnob" width="100" height="100">
+            </td>
+            <td width="75%" valign="middle">
+              <!-- <a href="https://github.com/agiachris/SfMLearnerMars"> -->
+                <papertitle>Bayesian Temporal Convolutional Networks</papertitle>
+              <!-- </a> -->
+              <br>
+                University of Toronto, CSC413 Neural Networks and Deep Learning
+              <p>
+                In this project, we explore the application of variational inference via <a href="https://arxiv.org/abs/1505.05424">Bayes by Backprop</a> to the increasingly 
+                popular temporal convolutional networks (<a href="https://arxiv.org/abs/1803.01271">TCNs</a>) architecture for time series predictive forecasting. 
+                Comparisons are made to the effective state-of-the-art in a series of ablation studies. 
+                <a href="https://drive.google.com/file/d/1DZY1iPzOM_QXONoLzzPvMOBEs20Uy_7e/view?usp=sharing">Project report</a>
+              </p> 
+            </td>
+          </tr>
+        </tbody></table>
+
+        </div>
+
+      </td>
+      </tr>
+    </table>
+
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div id="particles-js"></div>
+    <script>
+      particlesJS.load("particles-js", "particles_config/particlesjs-config-gray.json",
+      function(){
+          console.log("particles.json loaded...")
+      })
+    </script>
+
+  </body>
+</html>
